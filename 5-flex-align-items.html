@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos Align-Items</title>
+
+    <style>
+        .container {
+            max-width: 350px;
+            border: 1px solid black;
+            display: flex;
+        }
+
+        .item {
+            background-color: purple;
+            margin: 5px;
+            color: white;
+            text-align: center;
+            flex: 1;
+        }
+
+        .column {
+            flex-direction: column;
+        }
+
+        .flex {
+            flex: 1;
+        }
+
+        .center {
+            align-items: center;
+        }
+
+        .stretch {
+            align-items: stretch;
+        }
+
+        .start {
+            align-items: flex-start;
+        }
+
+        .end {
+            align-items: end;
+        }
+
+        .baseline {
+            align-items: baseline;
+        }
+
+        .central{
+            height: 300px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .central .item {
+            flex: 0;
+            padding: 20px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Row</h1>
+    <p>Center</p>
+    <section class="container center flex">
+        <div class="item">Reislain</div>
+        <div class="item">Lumanda</div>
+        <div class="item">Aurel Oluculum Amagru Oki Maru torulu lostru </div>
+    </section>
+
+    <p>stretch</p>
+    <section class="container stretch">
+        <div class="item">Reislain</div>
+        <div class="item">Lumanda</div>
+        <div class="item">Aurel Oluculum Amagru Oki Maru torulu lostru</div>
+    </section>
+
+    <p>flex-start</p>
+    <section class="container start">
+        <div class="item">Reislain</div>
+        <div class="item">Lumanda</div>
+        <div class="item">Aurel Oluculum Amagru Oki Maru torulu lostru</div>
+    </section>
+
+    <p>flex-end</p>
+    <section class="container end">
+        <div class="item">Reislain</div>
+        <div class="item">Lumanda</div>
+        <div class="item">Aurel Oluculum Amagru Oki Maru torulu lostru</div>
+    </section>
+
+    <p>baseline</p>
+    <section class="container baseline">
+        <div class="item"><br>Reislain</div>
+        <div class="item">Lumanda otara Makuldanda</div>
+        <div class="item">Aurel Oluculum Amagru Oki Maru torulu lostru</div>
+    </section>
+
+    <h1>Column</h1>
+    <p>flex-start</p>
+    <section class="container start column">
+        <div class="item">Reislain</div>
+        <div class="item">Lumanda</div>
+        <div class="item">Aurel Oluculum Amagru Oki Maru torulu lostru </div>
+    </section>
+
+    <p>flex-end</p>
+    <section class="container end column">
+        <div class="item">Reislain</div>
+        <div class="item">Lumanda</div>
+        <div class="item">Aurel Oluculum Amagru Oki Maru torulu lostru </div>
+    </section>
+
+    <p>center</p>
+    <section class="container center column">
+        <div class="item">Reislain</div>
+        <div class="item">Lumanda</div>
+        <div class="item">Aurel Oluculum Amagru Oki Maru torulu lostru </div>
+    </section>
+
+    <p>stretch</p>
+    <section class="container stretch column">
+        <div class="item">Reislain</div>
+        <div class="item">Lumanda</div>
+        <div class="item">Aurel Oluculum Amagru Oki Maru torulu lostru </div>
+    </section>
+
+    <p>baseline</p>
+    <section class="container baseline column">
+        <div class="item"><br>Reislain</div>
+        <div class="item">Lumanda</div>
+        <div class="item">Aurel Oluculum Amagru Oki Maru torulu lostru </div>
+    </section>
+
+    <p>alinhamento central</p>
+    <section class="container central center">
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pellentesque justo sit amet diam pharetra
+            placerat.</div>
+    </section>
+
+</body>
+
+</html>

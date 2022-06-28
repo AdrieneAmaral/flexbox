@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos align-self</title>
+    <style>
+        .container{
+            display: flex;
+            border: 1px solid black;
+            max-width: 350px;
+            margin-bottom: 10px;
+        }
+
+        .align-container{
+            align-items: center;
+        }
+
+        .item{
+            background-color: brown;
+            color: white;
+            font-size: 24px;
+            text-align: center;
+            margin: 5px;
+        }
+
+        .column{
+            flex-direction: column;
+        }
+
+        .center{
+            align-self: center;
+        }
+
+        .start{
+            align-self: flex-start;
+        }
+
+        .end{
+            align-self: flex-end;
+        }
+
+        .baseline{
+            align-self: baseline;
+        }
+
+        .stretch{
+            align-self: stretch;
+        }
+
+        .auto{
+            align-self: auto;
+        }
+        /* quando auto, o align self respeita o alignment do container, no caso center */
+    </style>
+</head>
+<body>
+    <h1>Row</h1>
+    <p>Auto</p>
+    <div class="container align-container">
+        <div class="item auto">AA</div>
+        <div class="item auto">123</div>
+        <div class="item auto">JJJ hasdu oasidh Ohouasdh ausdh aosudh oasuhdoa OOI Lionel</div>
+        <div class="item auto">B</div>
+    </div>
+
+    <p>variados</p>
+    <div class="container">
+        <div class="item stretch">AA</div>
+        <div class="item start">123</div>
+        <div class="item end">JJJ hasdu oasioouashd oauhdsu adh OOOI Lionel</div>
+        <div class="item center">B</div>
+    </div>
+
+    <p>stretch</p>
+    <div class="container">
+        <div class="item stretch">AA</div>
+        <div class="item stretch">123</div>
+        <div class="item stretch">JJJ hasdu oasi aposdjhas doasihd aoidh OOOI Lionel</div>
+        <div class="item stretch">B</div>
+    </div>
+
+    <p>baseline</p>
+    <div class="container">
+        <div class="item baseline">AA</div>
+        <div class="item baseline">123</div>
+        <div class="item baseline">JJJ hasdu oasidh OOOI Lionel</div>
+        <div class="item baseline">B</div>
+    </div>
+
+    <p>end</p>
+    <div class="container">
+        <div class="item end">AA</div>
+        <div class="item end">123</div>
+        <div class="item end">JJJ hasdu oaiausdgia iasudhg iaudh p9uw eqsidh OOOI Lionel</div>
+        <div class="item end">B</div>
+    </div>
+
+    <p>start</p>
+    <div class="container">
+        <div class="item start">AA</div>
+        <div class="item start">123</div>
+        <div class="item start">JJJ hasdu oasidh OOOIaiusdgh iasghd Lionel</div>
+        <div class="item start">B</div>
+    </div>
+
+    <h1>Columns</h1>
+
+    <p>Auto</p>
+    <div class="container align-container column">
+        <div class="item auto">AA</div>
+        <div class="item auto">123</div>
+        <div class="item auto">JJJ hasdu oasidh Ohouasdh ausdh aosudh oasuhdoa OOI Lionel</div>
+        <div class="item auto">B</div>
+    </div>
+
+    <p>variados</p>
+    <div class="container column">
+        <div class="item stretch">AA</div>
+        <div class="item start">123</div>
+        <div class="item end">JJJ hasdu oasioouashd oauhdsu adh OOOI Lionel</div>
+        <div class="item center">B</div>
+    </div>
+
+    <p>stretch</p>
+    <div class="container column">
+        <div class="item stretch">AA</div>
+        <div class="item stretch">123</div>
+        <div class="item stretch">JJJ hasdu oasi aposdjhas doasihd aoidh OOOI Lionel</div>
+        <div class="item stretch">B</div>
+    </div>
+
+    <p>baseline</p>
+    <div class="container column">
+        <div class="item baseline">AA</div>
+        <div class="item baseline">123</div>
+        <div class="item baseline">JJJ hasdu oasidh OOOI Lionel</div>
+        <div class="item baseline">B</div>
+    </div>
+
+    <p>end</p>
+    <div class="container column">
+        <div class="item end">AA</div>
+        <div class="item end">123</div>
+        <div class="item end">JJJ hasdu oaiausdgia iasudhg iaudh p9uw eqsidh OOOI Lionel</div>
+        <div class="item end">B</div>
+    </div>
+
+    <p>start</p>
+    <div class="container column">
+        <div class="item start">AA</div>
+        <div class="item start">123</div>
+        <div class="item start">JJJ hasdu oasidh OOOIaiusdgh iasghd Lionel</div>
+        <div class="item start">B</div>
+    </div>
+</body>
+</html>

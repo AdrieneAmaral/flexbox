@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos Aling-content</title>
+</head>
+
+<style>
+    .container{
+        height: 400px;
+        max-width: 300px;
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        border: 1px solid black;
+    }
+
+    .item{
+        background-color: orangered;
+        padding: 0 5px;
+        margin: 5px;
+        flex: 1;
+        text-align: center;
+        color: white;
+    }
+
+    .stretch{
+        align-content: stretch;
+    }
+
+    .center{
+        align-content: center;
+    }
+
+    .start{
+        align-content: flex-start;
+    }
+
+    .end{
+        align-content: flex-end;
+    }
+
+    .space-between{
+        align-content: space-between;
+    }
+
+    .space-around{
+        align-content: space-around;
+    }
+
+    .column{
+        flex-direction: column;
+    }
+
+</style>
+<body>
+    <h1>Row</h1>
+    <p>stretch</p>
+    <div class="container stretch">
+        <div class="item">Aliquam pellentesque justo sit amet diam pharetra placerat.</div>
+        <div class="item">Aliquam pellentesque justo</div>
+        <div class="item">Aliquam pellentesque justo sit</div>
+        <div class="item">Aliquam pellentesque justo sit amet diam pharetra</div>
+        <div class="item">Aliquam pellentesque justo sit amet diam</div>
+        <div class="item">Aliquam pellentesque</div>
+        <div class="item">Aliquam pellentesque justo sit ame</div>
+    </div>
+
+    <p>center</p>
+    <div class="container center">
+        <div class="item">Aliquam pellentesque justo sit amet diam pharetra placerat.</div>
+        <div class="item">Aliquam pellentesque justo</div>
+        <div class="item">Aliquam pellentesque justo sit</div>
+        <div class="item">Aliquam pellentesque justo sit amet diam pharetra</div>
+        <div class="item">Aliquam pellentesque justo sit amet diam</div>
+        <div class="item">Aliquam pellentesque</div>
+        <div class="item">Aliquam pellentesque justo sit ame</div>
+    </div>
+
+    <p>flex-start</p>
+    <div class="container start">
+        <div class="item">Aliquam pellentesque justo sit amet diam pharetra placerat.</div>
+        <div class="item">Aliquam pellentesque justo</div>
+        <div class="item">Aliquam pellentesque justo sit</div>
+        <div class="item">Aliquam pellentesque justo sit amet diam pharetra</div>
+        <div class="item">Aliquam pellentesque justo sit amet diam</div>
+        <div class="item">Aliquam pellentesque</div>
+        <div class="item">Aliquam pellentesque justo sit ame</div>
+    </div>
+
+    <p>flex-end</p>
+    <div class="container end">
+        <div class="item">Aliquam pellentesque justo sit amet diam pharetra placerat.</div>
+        <div class="item">Aliquam pellentesque justo</div>
+        <div class="item">Aliquam pellentesque justo sit</div>
+        <div class="item">Aliquam pellentesque justo sit amet diam pharetra</div>
+        <div class="item">Aliquam pellentesque justo sit amet diam</div>
+        <div class="item">Aliquam pellentesque</div>
+        <div class="item">Aliquam pellentesque justo sit ame</div>
+    </div>
+
+    <p>space-between</p>
+    <div class="container space-between">
+        <div class="item">Aliquam pellentesque justo sit amet diam pharetra placerat.</div>
+        <div class="item">Aliquam pellentesque justo</div>
+        <div class="item">Aliquam pellentesque justo sit</div>
+        <div class="item">Aliquam pellentesque justo sit amet diam pharetra</div>
+        <div class="item">Aliquam pellentesque justo sit amet diam</div>
+        <div class="item">Aliquam pellentesque</div>
+        <div class="item">Aliquam pellentesque justo sit ame</div>
+    </div>
+
+    <p>space-around</p>
+    <div class="container space-around">
+        <div class="item">Aliquam pellentesque justo sit amet diam pharetra placerat.</div>
+        <div class="item">Aliquam pellentesque justo</div>
+        <div class="item">Aliquam pellentesque justo sit</div>
+        <div class="item">Aliquam pellentesque justo sit amet diam pharetra</div>
+        <div class="item">Aliquam pellentesque justo sit amet diam</div>
+        <div class="item">Aliquam pellentesque</div>
+        <div class="item">Aliquam pellentesque justo sit ame</div>
+    </div>
+
+</body>
+</html>

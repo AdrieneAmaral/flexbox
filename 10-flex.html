@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos Flex</title>
+    <style>
+        .container{
+            display: flex;
+            border: 1px solid black;
+            max-width: 440px;
+        }
+
+        .item{
+            background-color: maroon;
+            color: white;
+            font-size: 24px;
+            text-align: center;
+            margin: 5px;
+        }
+
+        .flex-1{
+            flex: 1;
+            /*grow = 1, shrink = 1, basis = 0 */
+        }
+
+        .flex-2{
+            flex: 2;
+            /*grow = 2, shrink = 1, basis = 0 */
+        }
+
+        .largura{
+            width: 200px;
+            /* min-width: 250px; */
+        }
+    </style>
+</head>
+<body>
+    <p>flex 1</p>
+    <div class="container">
+        <div class="item flex-1">AA</div>
+        <div class="item flex-1">BBBBB</div>
+        <div class="item flex-1">C</div>
+        <div class="item flex-1">DD</div>
+        <div class="item flex-1">E</div>
+    </div>
+
+    <p>flex 2</p>
+    <div class="container">
+        <div class="item flex-1">AA</div>
+        <div class="item flex-2">BBBBB</div>
+        <div class="item flex-2">C</div>
+        <div class="item flex-2">DD</div>
+        <div class="item flex-1">E</div>
+    </div>
+
+    <p>flex 1</p>
+    <div class="container">
+        <div class="item flex-1 largura">AA</div>
+        <div class="item flex-1 largura">BBBBB</div>
+        <div class="item flex-1 largura">C</div>
+        <div class="item flex-1 largura">DD</div>
+        <div class="item flex-1 largura">E</div>
+    </div>
+</body>
+</html>
